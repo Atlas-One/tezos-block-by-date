@@ -1,0 +1,44 @@
+{
+    "name": "@atlasone/tezos-block-by-date",
+    "version": "1.0.0",
+    "description": "Get Tezos block number by a given date. Or blocks by a given period duration.",
+    "keywords": [
+        "tezos",
+        "blockchain",
+        "dapp",
+        "utilties"
+    ],
+    "homepage": "https://github.com/atlasone/tezos-block-by-date",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/atlasone/tezos-block-by-date.git"
+    },
+    "bugs": {
+        "url": "https://github.com/atlasone/tezos-block-by-date/issues"
+    },
+    "license": "MIT",
+    "main": "./lib/tezos-block-by-date.js",
+    "dependencies": {
+        "axios": "^0.21.4",
+        "moment": "^2.29.1"
+    },
+    "scripts": {
+        "build": "rimraf lib && babel src -d lib",
+        "test": "npm run build && mocha && npm run lint",
+        "lint": "eslint src"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.14.8",
+        "@babel/core": "^7.15.0",
+        "@babel/preset-env": "^7.15.0",
+        "chai": "^4.3.4",
+        "eslint": "^7.32.0",
+        "mocha": "^9.1.0",
+        "prettier": "^2.4.1",
+        "rimraf": "^3.0.2"
+    },
+    "browserslist": [
+        "last 2 chrome versions",
+        "maintained node versions"
+    ]
+}
