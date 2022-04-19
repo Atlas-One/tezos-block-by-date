@@ -1,5 +1,5 @@
 {
-    "name": "@atlasone/tezos-block-by-date",
+    "name": "tezos-block-by-date",
     "version": "1.0.0",
     "description": "Get Tezos block number by a given date. Or blocks by a given period duration.",
     "keywords": [
